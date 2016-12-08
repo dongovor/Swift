@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         
         theLabel.text = String(tapCount)
         
-        if tapCount >= 10 {
-            theLabel.text = "You are the tap master"
+        if tapCount >= 20 {
+            theLabel.text = "You are the tap master, because you tapped \(tapCount)"
         }
         
     }
