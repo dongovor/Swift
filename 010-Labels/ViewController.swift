@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var theLabel: UILabel!
     
     var tapCount = 0
@@ -18,11 +18,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var textTwo: UITextField!
     
     @IBAction func theButton(_ sender: Any) {
-        theLabel.text = String(Double(textOne.text!)! + Double(textTwo.text!)!)
+        var addition = false
+        
+        if addition {
+            theLabel.text = String(Double(textOne.text!)! + Double(textTwo.text!)!)
+        } else {
+            theLabel.text = String(Double(textOne.text!)! - Double(textTwo.text!)!)
+        }
     }
     
     @IBAction func theButton2(_ sender: Any) {
-
+        
     }
     
     override func viewDidLoad() {
